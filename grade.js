@@ -1,20 +1,15 @@
-function generateGrade() {
-    let marks = prompt("Enter student marks (between 0 and 100):");
-    
-    if (marks >= 80) {
-        return "Grade: A";
-        
-    } else if (marks >= 60) {
-        return "Grade: B";
-    } else if ( marks >= 50) {
-        return "Grade: C";
-    } else if (marks >= 40) {
-        return "Grade: D";
+// First assignment challenge:Student Grade Generator
+function calculateGrade(mark) {
+
+    if (mark > 79) {
+        return 'A';
+    } else if (mark >= 60) {
+        return 'B';
+    } else if (mark >= 50) {
+        return 'C';
+    } else if (mark >= 40) {
+        return 'D';
     } else {
-        return "Grade: E";
+        return 'E';
     }
 }
-
-// calling it
-let grade = generateGrade();
-console.log(grade)
